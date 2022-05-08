@@ -80,13 +80,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="result.html">
                 <span data-feather="clipboard"></span>
                 Results
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="https://parikshya-41797.web.app/studentsroom.html">
+              <a class="nav-link" onClick="myFunction()">
                 <span data-feather="log-in"></span>
                 Enter Room
               </a>
@@ -210,6 +210,11 @@
 
 
   <br /><br /><br />
+  <script>
+    function myFunction() {
+          window.open('https://parikshya-41797.web.app/studentsroom.html','examwin','titlebar=no,toolbar=no,menubar=no,width=4000,height=4000');
+        }
+  </script>
 
 
   <!-- Bootstrap core JavaScript

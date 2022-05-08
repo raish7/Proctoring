@@ -25,6 +25,7 @@
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -96,7 +97,7 @@
             <br><h3 style="font-family:Poppins;border-left: 4px solid lightgrey;">&nbsp;Exam Details</h3>
             <p style="letter-spacing: 1px;">Date: Jan 1st,2022</p>
             <p style="letter-spacing:1px">Time: 2pm</p><br>
-            <button type="button" class="btn btn-info" onClick="parent.location='https://parikshya-41797.web.app/'" target="_blank"><span data-feather="phone-outgoing"></span>&nbsp;&nbsp;Start Exam</button>
+            <button type="button" class="btn btn-info" onClick="parent.location='https://parikshya-41797.web.app/'" ><span data-feather="phone-outgoing"></span>&nbsp;&nbsp;Start Exam</button>
             </div>
         </div><br><br>
          
@@ -108,36 +109,11 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4ioz2G22t68eXADNCESrSMjt27Bg1REPsu2dfax--bwzXiQ/viewform?embedded=true" width="640" height="986" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </p>-->
         </center>
-        <script>
-      function getFullscreenElement(){
-    return document.getfullscreenElement
-      || document.webkitFullscreenElement
-      || document.mozFullscreenElement
-      || document.msFullscreenElement;
-   }
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-      function toggleFullscreen()
-   {
-    if(getFullscreenElement()){
-        document.exitFullscreen();
-        document.location.reload(true)
-    }
-    else{
-      document.documentElement.requestFullscreen().catch(console.log);
-    }
-  }
-
-  document.addEventListener("dblclick",() => {
-    toggleFullscreen();
-  });
-
-  document.addEventListener('keydown', function(event){
-  if(event.key === "Escape"){
-    document.location.reload(true)
-  }
-});
-
-    </script>                 
+       
+    
+   
 
 
 

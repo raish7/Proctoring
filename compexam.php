@@ -76,10 +76,10 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="log-in"></span>
-                  Enter Room
-                </a>
+              <a class="nav-link" onClick="myFunction()">
+                <span data-feather="log-in"></span>
+                Enter Room
+              </a>
               </li>
               
             </ul>
@@ -104,7 +104,7 @@
              <center><img src="icons/test-passed.png" height="auto" width="60%">
              <!-- <f style="font-family: Roboto; letter-spacing: 1px; font-size: 2vw;"><b>English</b></f><br><br> 
               <button type="button" class="btn btn-info">View Details</button></center> -->
-              <br><f style="font-family: Roboto; letter-spacing: 1px; font-size: 20px;"><b>English</b></f><br>
+              <br><f style="font-family: Roboto; letter-spacing: 1px; font-size: 20px;"><b>Computer</b></f><br>
               </center> 
             
           </div>
@@ -113,47 +113,13 @@
             <p style="letter-spacing: 1px;">Date: Jan 1st,2022</p>
             <p style="letter-spacing:1px">Time: 2pm</p><br>
             <button type="button" class="btn btn-info" onclick="window.location.href='calendarpage.html';">View in calendar</button></center>
-      </div>
+          </div>
 
-      
-
-       
-       <script>
-      function getFullscreenElement(){
-    return document.getfullscreenElement
-      || document.webkitFullscreenElement
-      || document.mozFullscreenElement
-      || document.msFullscreenElement;
-   }
-
-      function toggleFullscreen()
-   {
-    if(getFullscreenElement()){
-        document.exitFullscreen();
-        document.location = document.location.href;
-    }
-    else{
-      document.documentElement.requestFullscreen().catch(console.log);
-    }
-  }
-
-  document.addEventListener("dblclick",() => {
-    toggleFullscreen();
-  });
-
-  document.addEventListener('keydown', function(event){
-  const key = event.key;
-  if(key === "Escape"){
-    toggleFullscreen();
-  }
-});
-
-    </script>
-       
-
-
-
-
+          <script>
+            function myFunction() {
+                  window.open('https://parikshya-41797.web.app/studentsroom.html','examwin','titlebar=no,toolbar=no,menubar=no,width=4000,height=4000');
+                }
+          </script>
 
           <!-- Bootstrap core JavaScript
     ================================================== -->
